@@ -1,0 +1,33 @@
+.panel {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50px;
+  height: 90vh;
+  width: 50px;
+  margin: 10px;
+  color: thistle;
+  position: relative;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+}
+h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-size: 2rem;
+  color: yellow;
+  max-height: 1rem;
+  transition: opacity 0.3s ease-in;
+}
+
+.active {
+  width: 60vw;
+}
+
+@media (max-width: 600px) {
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
